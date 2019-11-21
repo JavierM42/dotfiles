@@ -1,0 +1,16 @@
+{
+    "breadcrumbs.enabled": true,
+    "editor.tabSize": 2,
+    "files.insertFinalNewline": true,
+    "window.zoomLevel": 0,
+    "gitlens.defaultDateFormat": "DD/MM/YYYY",
+    "gitlens.defaultDateShortFormat": "DD/MM/YYYY",
+    "files.trimTrailingWhitespace": true,
+    "explorer.autoReveal": false,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "search.location": "sidebar",
+    "workbench.startupEditor": "newUntitledFile"
+}
