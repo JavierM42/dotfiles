@@ -5,7 +5,7 @@ https://github.com/clintmod/macprefs for the rest of mac configs.
 
 Base App Suite:
 
-- Caffeine
+- Amphetamine
 - Discord
 - Firefox
 - Folx
