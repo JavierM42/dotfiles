@@ -26,3 +26,5 @@ Base App Suite:
 - VLC
 - Whatsapp
 - Zeplin
+- tmux
+- homebrew
