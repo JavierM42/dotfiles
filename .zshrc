@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/javier/.oh-my-zsh"
+export ZSH="/Users/javierm42/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -104,8 +104,8 @@ export PATH="$PATH:$HOME/.rvm/bin"
 alias vim="nvim"
 alias vimdiff="nvim -d"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # add varnish to path
 export PATH="/usr/local/sbin:$PATH"
@@ -113,4 +113,15 @@ export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
 
+# export PATH=$(brew --prefix openssl)/bin:$PATH
+export PATH="$(brew --prefix openssl)/bin:$PATH"
+export LDFLAGS="-L$(brew --prefix openssl)/lib"
+export CPPFLAGS="-I$(brew --prefix openssl)/include"
+
+. $(brew --prefix asdf)/asdf.sh
+
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'

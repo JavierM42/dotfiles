@@ -2,7 +2,6 @@
     "breadcrumbs.enabled": true,
     "editor.tabSize": 2,
     "files.insertFinalNewline": true,
-    "window.zoomLevel": 0,
     "gitlens.defaultDateFormat": "DD/MM/YYYY",
     "gitlens.defaultDateShortFormat": "DD/MM/YYYY",
     "files.trimTrailingWhitespace": true,
@@ -10,7 +9,26 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
+    "[html.erb]": {
+        "editor.formatOnSave": false
+    },
     "javascript.updateImportsOnFileMove.enabled": "always",
-    "search.location": "sidebar",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "ruby.intellisense": "rubyLocate",
+    "ruby.useLanguageServer": true,
+    "ruby.lint": {
+        "rubocop": false,
+        "ruby": false,
+        "ruby-lint": false,
+        "ruby-unicode": false
+    },
+    "ruby.format": "rubocop",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "tailwindCSS.includeLanguages": {
+        "typescript": "javascript"
+    },
+    "editor.lineNumbers": "relative"
 }
