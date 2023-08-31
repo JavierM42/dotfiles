@@ -10,15 +10,17 @@ Base App Suite:
 - Firefox
 - Folx
 - Google Chrome
+- Handbrake
 - Harvest
 - iTerm
 - Karabiner
 - MonitorControl
+- NoTunes
 - PostgreSQL
 - Postman
 - r-name
 - Slack
-- Spectacle
+- Rectangle
 - Spotify
 - Telegram
 - Trello
@@ -28,3 +30,21 @@ Base App Suite:
 - Zeplin
 - tmux
 - homebrew
+
+VSCode Extensions:
+ENV
+EsLint
+Excel Viewer
+GitHub Copilot
+GitLens
+GitHub Theme
+Import Cost
+Material Icon Theme
+MDX
+Nord
+Prettier
+SVG Preview
+Tailwind Intellisense
+VSCode React Refactor
+Vim
+SVG Viewer

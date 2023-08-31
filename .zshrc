@@ -62,7 +62,9 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-completions zsh-autosuggestions zsh-syntax-highlighting)
+
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,9 +96,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /usr/local/share/chruby/chruby.sh
-chruby 2.5.0
-source /usr/local/opt/chruby/share/chruby/auto.sh
+
+# 12/7/2023 comento chruby xq no lo uso
+# source /usr/local/share/chruby/chruby.sh
+# chruby 2.5.0
+# source /usr/local/opt/chruby/share/chruby/auto.sh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
@@ -112,6 +116,7 @@ export PATH="/usr/local/sbin:$PATH"
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
 export GOPATH=~/go
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/Library/PostgreSQL/11/bin
 
 # export PATH=$(brew --prefix openssl)/bin:$PATH
 export PATH="$(brew --prefix openssl)/bin:$PATH"
@@ -125,3 +130,11 @@ export CPPFLAGS="-I$(brew --prefix openssl)/include"
 
 alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
 alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+# pnpm
+export PNPM_HOME="/Users/javierm42/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
