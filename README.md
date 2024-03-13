@@ -2,7 +2,6 @@
 
 https://github.com/clintmod/macprefs for the rest of mac configs.
 
-
 Base App Suite:
 
 - Amphetamine
@@ -18,7 +17,6 @@ Base App Suite:
 - NoTunes
 - PostgreSQL
 - Postman
-- r-name
 - Slack
 - Rectangle
 - Spotify
